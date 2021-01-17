@@ -1,5 +1,8 @@
 # 04 Web APIs: Code Quiz
 
+URL:
+GITHUB REPOSITYORY: 
+
 ## Your Task
 
 As you proceed in your journey to becoming a full-stack web developer, it’s likely that you’ll be asked to complete a coding assessment, perhaps as part of an interview process. A typical coding assessment is a combination of multiple-choice questions and interactive coding challenges. 
@@ -31,4 +34,8 @@ THEN the game is over
 WHEN the game is over
 THEN I can save my initials and score
 
-```
+
+![Screenshot](Assets/Screenshot1.PNG?raw=true)
+![Screenshot](Assets/Screenshot2.PNG?raw=true)
+![Screenshot](Assets/Screenshot3.PNG?raw=true)
+
