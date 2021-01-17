@@ -4,8 +4,9 @@
 
 # 04 Web APIs: Code Quiz
 
-URL:
-GITHUB REPOSITYORY: 
+URL: https://basedricky.github.io/LemmeAxYouAboutJS/
+
+GITHUB REPOSITYORY: https://github.com/basedricky/LemmeAxYouAboutJS
 
 ## Your Task
 
