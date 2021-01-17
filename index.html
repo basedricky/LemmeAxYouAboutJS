@@ -1,51 +1,56 @@
-!
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <title>Title</title>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coding Quiz</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-  <div class="jumbotron">
-    <h1 class="display-3 text-center">Coding Quiz 2021</h1>
-    <H5 class="text-center">Answer the questions as quickly as possible. You have 60 seconds to complete the quiz.
-      Time remaining will decrease 10 sec for wrong answers. Best time wins!</H5>
-    <hr class="my-2">
-    <button class="btn btn-primary btn-lg col text-center" id="startButton">Click To
-      Begin</button>
+  <div class="container">
 
-  </div>
-
-  <div class="row">
-    <div class="col-sm-4" id="scoreDiv">
-
+    <div id="startpage">
+      <h2>Coding Quiz</h2>
+      <h2>Answer each question before time runs out!</h2>
+      <button id="startbtn">Start Quiz</button>
+      <button id="startPageHighscore" onclick="showHighscore()">High Scores</button>
     </div>
-    <div class="col-sm-4" id="questionsDiv">
 
+    <div id="quiz">
+      <div id="timer">Time left: </div>
+      <div id="questions">
+        <p>Questions Placeholder</p>
+      </div>
+      <button id="a" onclick="checkAnswer('a')">A</button>
+      <button id="b" onclick="checkAnswer('b')">B</button>
+      <button id="c" onclick="checkAnswer('c')">C</button>
+      <button id="d" onclick="checkAnswer('d')">D</button>
+      <div id="result"></div>
     </div>
-    <div class="col-sm-4" id="timerDiv">Time</div>
+    <div id="gameover">
 
+      <div id="finalScore"></div>
+      <input type="text" size="40" placeholder="Enter you initials for high score" name="intials" id="initials" />
+      <button id="submitScore">Submit Score</button>
+    </div>
+    <div id=highscoreContainer>
+      <div id="high-scorePage">
+        <div id="highscore-header">
+          <h3>User Initials</h3>
+          <h3>Score</h3>
+        </div>
+        <div id="highscore-initials"></div>
+        <div id="highscore-score"></div>
+      </div>
+      <div id="endGameBtns">
+        <button id="playAgain" onclick="replayQuiz()">Play Again</button>
+        <button id="clearHighscore" onclick="clearScore()">Clear Highscores</button>
+      </div>
+    </div>
   </div>
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
