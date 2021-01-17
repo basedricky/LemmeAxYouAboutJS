@@ -45,7 +45,7 @@ var quizQuestions = [{
     correctAnswer: "d"
 },
 {
-    question: "What is index postion is Volvo in the following array? var cars  [Saab, Volvo, BMW]?",
+    question: "Index number fo Volvo? [Saab, Volvo, BMW]",
     choiceA: "0",
     choiceB: "1",
     choiceC: "2",
@@ -202,13 +202,13 @@ function checkAnswer(answer) {
         alert("That Is Correct!");
         currentQuestionIndex++;
         generateQuizQuestion();
-        //display in the results div that the answer is correct.
+        //display in the results div that the answer is correct and adds 5 seconds to the score.
     } else if (answer !== correct && currentQuestionIndex !== finalQuestionIndex) {
         timeLeft -= 5;
         alert("That Is Incorrect.")
         currentQuestionIndex++;
         generateQuizQuestion();
-        //display in the results div that the answer is wrong and subtract 5 seconds.
+        //display in the results div that the answer is wrong and subtracts 5 seconds from the score.
     } else {
         showScore();
     }
