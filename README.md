@@ -1,3 +1,7 @@
+![Screenshot](Assets/Screenshot1.PNG?raw=true)
+![Screenshot](Assets/Screenshot2.PNG?raw=true)
+![Screenshot](Assets/Screenshot3.PNG?raw=true)
+
 # 04 Web APIs: Code Quiz
 
 URL:
@@ -35,6 +39,4 @@ WHEN the game is over
 THEN I can save my initials and score
 
 
-![Screenshot](Assets/Screenshot1.PNG?raw=true)
-![Screenshot](Assets/Screenshot2.PNG?raw=true)
-![Screenshot](Assets/Screenshot3.PNG?raw=true)
+
